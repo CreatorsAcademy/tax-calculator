@@ -16,6 +16,7 @@ function Currency({ label, value, handleChange, startAdornment }) {
             <OutlinedInput
                 id="outlined-adornment-amount"
                 value={value}
+                type="number"
                 onChange={handleChange("amount")}
                 startAdornment={
                     <InputAdornment position="start">

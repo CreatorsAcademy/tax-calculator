@@ -66,17 +66,15 @@ function TaxLayout() {
     return (
         <Grid container spacing={4}>
             <Grid item xs={12}>
-                <div>
-                    <Currency
-                        label="Amount"
-                        value={values.amount}
-                        handleChange={handleChange}
-                        startAdornment="Rs."
-                    />
-                </div>
+                <Currency
+                    label="Amount"
+                    value={values.amount}
+                    handleChange={handleChange}
+                    startAdornment="Rs."
+                />
             </Grid>
             <Grid item xs={12}>
-                <div style={{ width: "500px" }}>
+                <div style={{ width: "30rem" }}>
                     <DataGrid
                         autoHeight
                         rows={rows}
